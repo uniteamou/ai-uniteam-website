@@ -9,7 +9,7 @@ export function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <Link to="/" className="flex items-center group">
-              <img src="/logo.svg" alt="Uniteam logo" className="size-8" />
+              <img src="./logo.svg" alt="Uniteam logo" className="size-8" />
               <span
                 className="text-white"
                 style={{
