@@ -1,7 +1,5 @@
 
-  # test
-
-  This is a code bundle for test. The original project is available at https://www.figma.com/design/rpcO9qb5MeIGTZs1JmGDCG/test.
+  # Uniteam
 
   ## Running the code
 
