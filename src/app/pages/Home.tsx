@@ -396,10 +396,6 @@ export function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative">
-            {/* Connecting line */}
-            <div className="hidden md:block absolute top-10 left-[calc(33.33%+16px)] right-[calc(33.33%+16px)] h-px bg-gradient-to-r from-violet-500/40 to-blue-500/40" />
-            <div className="hidden md:block absolute top-10 left-[calc(66.66%-16px)] right-8 h-px bg-gradient-to-r from-blue-500/40 to-emerald-500/40" />
-
             {steps.map((step, i) => (
               <div key={step.n} className="p-7 rounded-2xl border border-zinc-800 bg-zinc-900/50 relative">
                 <div

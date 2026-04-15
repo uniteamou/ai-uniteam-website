@@ -6,16 +6,21 @@ import { CaseStudies } from "./pages/CaseStudies";
 import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
 
-export const router = createBrowserRouter([
+export const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      Component: Root,
+      children: [
+        { index: true, Component: Home },
+        { path: "services", Component: Services },
+        { path: "case-studies", Component: CaseStudies },
+        { path: "about", Component: About },
+        { path: "contact", Component: Contact },
+      ],
+    },
+  ],
   {
-    path: "/",
-    Component: Root,
-    children: [
-      { index: true, Component: Home },
-      { path: "services", Component: Services },
-      { path: "case-studies", Component: CaseStudies },
-      { path: "about", Component: About },
-      { path: "contact", Component: Contact },
-    ],
+    basename: "/ai-uniteam-website/",
   },
-]);
+);

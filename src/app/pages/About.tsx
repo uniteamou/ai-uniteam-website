@@ -16,7 +16,7 @@ const team = [
     name: "Almas Akchabayev",
     role: "CEO / Project Manager",
     bio: "Dedicated to understanding client needs and delivering tailored solutions that exceed expectations.",
-    avatar: "/almas.png",
+    avatar: "./almas.png",
     linkedinUrl: "https://www.linkedin.com/in/almas-akchabayev/",
   },
   {
@@ -24,7 +24,7 @@ const team = [
     name: "Adilkhan Kenzhetayev",
     role: "CTO / GIS Expert",
     bio: "Expert in spatial data analysis and visualization for impactful decision-making.",
-    avatar: "/adilkhan.png",
+    avatar: "./adilkhan.png",
     linkedinUrl: "https://www.linkedin.com/in/adilkhan-kenzhetaev-8212aa13b/",
   },
   {
@@ -32,7 +32,7 @@ const team = [
     name: "Maksim Timinskii",
     role: "Designer and Frontend Developer",
     bio: "Transforms complex ideas into intuitive interfaces that engage users.",
-    avatar: "/maksim.png",
+    avatar: "./maksim.png",
     linkedinUrl: "https://www.linkedin.com/in/maksim-timinskii/",
   },
 ];
