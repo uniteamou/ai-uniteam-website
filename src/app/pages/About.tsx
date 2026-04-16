@@ -22,7 +22,7 @@ const team = [
   {
     initials: "AK",
     name: "Adilkhan Kenzhetayev",
-    role: "CTO / GIS Expert",
+    role: "CTO / AI Expert",
     bio: "Expert in spatial data analysis and visualization for impactful decision-making.",
     avatar: "./adilkhan.png",
     linkedinUrl: "https://www.linkedin.com/in/adilkhan-kenzhetaev-8212aa13b/",
@@ -267,17 +267,22 @@ export function About() {
             className="text-zinc-200 mb-8"
             style={{ fontSize: "clamp(1.1rem, 2.5vw, 1.4rem)", lineHeight: 1.7, fontStyle: "italic" }}
           >
-            "Great developer and communicator... always overdelivers. Working with this team was one of the best decisions we made."
+            "Great developer and communicator, two things rarely found together in the same person. He has been transparent in the development process from start to finish and always overdelivers. Highly recommend."
           </blockquote>
-          <div className="flex items-center justify-center gap-3">
+          <a
+            href="https://www.upwork.com/agencies/1794058697432903680/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-3 hover:opacity-80 transition-opacity"
+          >
             <div className="w-10 h-10 rounded-full bg-gradient-to-br from-violet-500 to-blue-500 flex items-center justify-center text-white" style={{ fontWeight: 700 }}>
-              JD
+              CM
             </div>
             <div className="text-left">
-              <p className="text-white" style={{ fontWeight: 600, fontSize: "0.9rem" }}>James D.</p>
+              <p className="text-white" style={{ fontWeight: 600, fontSize: "0.9rem" }}>Clathon M.</p>
               <p className="text-zinc-500" style={{ fontSize: "0.8rem" }}>Founder · Upwork ⭐ 5.0</p>
             </div>
-          </div>
+          </a>
         </div>
       </section>
 
