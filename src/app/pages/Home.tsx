@@ -43,6 +43,7 @@ const valueProps = [
 /* ─────────────── WHAT WE BUILD ─────────────── */
 const whatWeBuild = [
   {
+    id: "ai-assistants",
     icon: <MessageSquare className="w-6 h-6 text-violet-400" />,
     title: "AI Assistants",
     items: [
@@ -54,6 +55,7 @@ const whatWeBuild = [
     border: "border-violet-500/20",
   },
   {
+    id: "ai-automation",
     icon: <Zap className="w-6 h-6 text-blue-400" />,
     title: "AI Automation",
     items: ["Email processing", "CRM automation", "Workflow pipelines"],
@@ -61,6 +63,7 @@ const whatWeBuild = [
     border: "border-blue-500/20",
   },
   {
+    id: "custom-ai",
     icon: <Code2 className="w-6 h-6 text-emerald-400" />,
     title: "Custom AI Tools",
     items: ["Internal dashboards", "Internal tools", "Data platforms"],
@@ -378,7 +381,7 @@ export function Home() {
                   ))}
                 </ul>
                 <Link
-                  to="/services"
+                  to={`/services#${item.id}`}
                   className="inline-flex items-center gap-1 mt-6 text-zinc-400 hover:text-white transition-colors"
                   style={{ fontSize: "0.85rem", fontWeight: 600 }}
                 >
