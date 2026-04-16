@@ -21,6 +21,6 @@ export const router = createBrowserRouter(
     },
   ],
   {
-    basename: "/ai-uniteam-website/",
+    basename: "",
   },
 );
