@@ -1,3 +1,10 @@
 @import './fonts.css';
 @import './tailwind.css';
 @import './theme.css';
+
+/* Google Calendar scheduling button popup */
+/* iframe[title="Book a call"] {
+  width: min(500px, 95vw) !important;
+  height: min(700px, 80vh) !important;
+} */
+

@@ -13,7 +13,7 @@ import {
 const reasons = [
   {
     icon: <Zap className="w-4 h-4 text-violet-400" />,
-    text: "Free 30-min AI audit",
+    text: "Free 15-min AI audit",
   },
   {
     icon: <Clock className="w-4 h-4 text-blue-400" />,
@@ -390,8 +390,8 @@ export function Contact() {
           {/* ── RIGHT COLUMN ─────────────────── */}
           <div className="flex flex-col gap-6">
             {/* Book a call */}
-            <div className="p-8 rounded-3xl border border-zinc-800 bg-black">
-              <div className="flex items-center gap-3 mb-6">
+            <div className="rounded-3xl border border-zinc-800 bg-black h-[638px]">
+              <div className="flex items-center gap-3 p-8">
                 <div className="w-9 h-9 rounded-xl bg-zinc-800 flex items-center justify-center">
                   <Calendar className="w-4 h-4 text-blue-400" />
                 </div>
@@ -403,29 +403,31 @@ export function Contact() {
                     Book a call
                   </h2>
                   <p className="text-zinc-500" style={{ fontSize: "0.8rem" }}>
-                    30 minutes · Free · No commitment
+                    15 minutes · Free · No commitment
                   </p>
                 </div>
               </div>
 
-              <div
+              <div className="-mb-[200px] h-4"
                 style={{
                   borderRadius: "12px",
                   overflow: "hidden",
-                  height: "505px",
+                  height: "638px",
+                  // width: "590px",
                 }}
               >
                 <iframe
-                  src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3Ckc4NgsBz2YGbVrrgYjWVN625yPSGnIuMnkQcp_S2GQTMmDHSDiqlhLgMRpDHphbyZnXCMF3P?gv=true"
+                  src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2AkaCtxQId2ZXgpGddutnF66_xWBugG3cXG7XmXtVnckzni4siSXExzLboPk7aVGgoZvlc-8Oi?gv=true"
                   style={{
                     border: 1,
                     display: "block",
                     filter: "invert(1) hue-rotate(180deg) brightness(0.8) saturate(0.50)",
-                    marginTop: "-225px",
-                    height: "960px",
+                    marginTop: "-178px",
+                    height: "700px",
+                    overflow: "hidden",
                   }}
                   width="100%"
-                  title="Book a callddd"
+                  title="Book a call"
                 />
               </div>
             </div>
@@ -445,7 +447,7 @@ export function Contact() {
               <div className="flex flex-col gap-4">
                 {[
                   { step: "1", text: "We review your message within 24 hours" },
-                  { step: "2", text: "We schedule a 30-min discovery call" },
+                  { step: "2", text: "We schedule a 15-min discovery call" },
                   {
                     step: "3",
                     text: "We prepare a tailored automation proposal",

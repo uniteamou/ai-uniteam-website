@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import { projects } from "../../data/projects";
 import {
   ArrowRight,
   Clock,
@@ -97,29 +98,6 @@ const useCases = [
 ];
 
 /* ─────────────── CASE STUDIES ─────────────── */
-const caseStudies = [
-  {
-    id: "report-generator",
-    tag: "Automation",
-    title: "AI-powered report generator",
-    desc: "Automated data processing and report creation, eliminating 40+ manual hours per week.",
-    result: "40h/week saved",
-  },
-  {
-    id: "data-platform",
-    tag: "Data Platform",
-    title: "Scalable analytics system",
-    desc: "Built a high-performance data platform for complex multi-source workflows.",
-    result: "10× faster processing",
-  },
-  {
-    id: "ops-automation",
-    tag: "AI Pipelines",
-    title: "Operations automation",
-    desc: "Reduced manual operations by 80% using intelligent AI pipeline orchestration.",
-    result: "80% less manual work",
-  },
-];
 
 /* ─────────────── HOW WE WORK ─────────────── */
 const steps = [
@@ -488,9 +466,9 @@ export function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {caseStudies.map((c) => (
+            {projects.map((c) => (
               <Link
-                key={c.title}
+                key={c.id}
                 to={`/case-studies#${c.id}`}
                 className="p-6 rounded-2xl border border-zinc-800 bg-zinc-900/50 hover:border-zinc-700 transition-all duration-300 group flex flex-col"
               >
@@ -512,14 +490,14 @@ export function Home() {
                   className="text-zinc-400 flex-1"
                   style={{ fontSize: "0.88rem", lineHeight: 1.65 }}
                 >
-                  {c.desc}
+                  {c.preview.desc}
                 </p>
                 <div className="mt-5 pt-5 border-t border-zinc-800 flex items-center justify-between">
                   <span
                     className="text-emerald-400"
                     style={{ fontSize: "0.85rem", fontWeight: 700 }}
                   >
-                    {c.result}
+                    {c.preview.result}
                   </span>
                   <ChevronRight className="w-4 h-4 text-zinc-600 group-hover:text-zinc-400 transition-colors" />
                 </div>
