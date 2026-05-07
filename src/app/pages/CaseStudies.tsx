@@ -105,6 +105,10 @@ export function CaseStudies() {
                     <div className="flex-1 min-w-[200px] rounded-xl border border-zinc-800 bg-zinc-900/50 flex items-center justify-center" style={{ minHeight: "160px" }}>
                       <span className="text-zinc-600" style={{ fontSize: "0.8rem" }}>{cs.gallery[0].alt}</span>
                     </div>
+                  ) : cs.gallery[0].src.endsWith(".webm") || cs.gallery[0].src.endsWith(".mp4") ? (
+                    <div className="flex-1 min-w-[200px] rounded-xl border border-zinc-800 overflow-hidden bg-zinc-900/50">
+                      <video src={cs.gallery[0].src} autoPlay loop muted playsInline className="w-full h-auto block" />
+                    </div>
                   ) : (
                     <div className="flex-1 min-w-[200px] rounded-xl border border-zinc-800 overflow-hidden bg-zinc-900/50">
                       <img src={cs.gallery[0].src} alt={cs.gallery[0].alt} className="w-full h-auto block" />
@@ -120,6 +124,10 @@ export function CaseStudies() {
                   item.placeholder ? (
                     <div key={item.alt} className="flex-1 min-w-[200px] rounded-xl border border-zinc-800 bg-zinc-900/50 flex items-center justify-center" style={{ minHeight: "160px" }}>
                       <span className="text-zinc-600" style={{ fontSize: "0.8rem" }}>{item.alt}</span>
+                    </div>
+                  ) : item.src.endsWith(".webm") || item.src.endsWith(".mp4") ? (
+                    <div key={item.src} className="flex-1 min-w-[200px] rounded-xl border border-zinc-800 overflow-hidden bg-zinc-900/50">
+                      <video src={item.src} autoPlay loop muted playsInline className="w-full h-auto block" />
                     </div>
                   ) : (
                     <div key={item.src} className="flex-1 min-w-[200px] rounded-xl border border-zinc-800 overflow-hidden bg-zinc-900/50">

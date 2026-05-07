@@ -105,7 +105,7 @@ export const projects: Project[] = [
     gallery: [
       { src: "/ChargingStations.gif", alt: "EV charging station analytics" },
       { src: "/ServicePoints.gif", alt: "Points of interest layer" },
-      { src: "/surplusmap-chat.png", alt: "EV Infrastructure AI Assistant" },
+      { src: "/walkthrough.webm", alt: "EV Infrastructure AI Assistant" },
     ],
     sections: [
       {
